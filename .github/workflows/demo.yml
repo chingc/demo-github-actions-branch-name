@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Display github.base_ref
+        run: echo "github.base_ref is '${{ github.base_ref }}'"
+
       - name: Display github.head_ref
         run: echo "github.head_ref is '${{ github.head_ref }}'"
 
