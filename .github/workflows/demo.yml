@@ -1,0 +1,29 @@
+name: Demo
+
+on:
+  push:
+  schedule:
+    - cron: '30 5 1 * *'
+  workflow_dispatch:
+
+env:
+  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display github.head_ref
+        run: echo "github.head_ref is '${{ github.head_ref }}'"
+
+      - name: Display github.ref_name
+        run: echo "github.ref_name is '${{ github.ref_name }}'"
+
+      - name: Display github.ref
+        run: echo "github.ref is '${{ github.ref }}'"
+
+      - name: Display correct branch name
+        run: echo "branch name is '${BRANCH_NAME}'"
