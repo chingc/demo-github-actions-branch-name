@@ -28,5 +28,5 @@ jobs:
       - name: Display github.ref
         run: echo "github.ref is '${{ github.ref }}'"
 
-      - name: Display correct branch name
+      - name: Display branch name
         run: echo "branch name is '${BRANCH_NAME}'"
