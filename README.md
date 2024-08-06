@@ -4,7 +4,7 @@ This demo shows how to get the branch name in GitHub Actions.
 
 It's simple, but there are quirks depending on how the workflow is triggered.
 
-Edge case (more quirks): If your commit is tagged this method will return the tag. See SO link below.
+Edge case: If your commit is tagged this method will return the tag. See SO link below.
 
 ## Overview
 
