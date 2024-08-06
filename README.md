@@ -8,7 +8,7 @@ Edge case (more quirks): If your commit is tagged this method will return the ta
 
 ## Overview
 
-- Shows various `github` context properties that may or may not be the branch name
+- Shows various `github` context properties that may or may not contain the branch name
 - Sets branch name to the top level `env` so it can be accessed by the entire workflow
 
 ## References
