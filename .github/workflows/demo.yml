@@ -1,6 +1,7 @@
 name: Demo
 
 on:
+  pull_request:
   push:
   schedule:
     - cron: '30 5 1 * *'
