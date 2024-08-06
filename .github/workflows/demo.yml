@@ -19,6 +19,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Display event that triggered the workflow
+        run: echo "github.event_name is '${{ github.event_name }}'"
+
       - name: Display github.base_ref
         run: echo "github.base_ref is '${{ github.base_ref }}'"
 
