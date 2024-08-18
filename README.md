@@ -2,11 +2,13 @@
 
 Getting the branch name is a common CI operation. Surprisingly, there's no pre-defined way to get it in GitHub Actions.
 
-There are several ways to do it. This demo shows the simplest way without using 3rd party actions or invoking various tools.
+This demo shows the simplest way without using 3rd party actions or invoking various tools.
 
 It works in most cases, but there are some quirks.
 
 For example, if your commit is tagged this method will return the tag instead of the branch name. See SO link below.
+
+You may also get an unexpected result depending on the event that triggered the workflow.
 
 ## Overview
 
