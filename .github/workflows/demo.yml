@@ -4,7 +4,7 @@ on:
   pull_request:
   push:
   schedule:
-    - cron: '30 5 1 * *'
+    - cron: '0 0 1 * *'  # midnight every month (utc)
   workflow_dispatch:
 
 env:
